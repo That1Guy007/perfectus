@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="wrapper strokeme">
     <!-- This will be the logo or put it into the brand Nav bar <img alt="Vue logo" src="./assets/logo.png"> -->
     <navBar companyName="Profectus Ventures"/>
     <topBody></topBody>
@@ -30,7 +30,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #CA8201;
-  margin-top: 0px;
+  
 }
 </style>

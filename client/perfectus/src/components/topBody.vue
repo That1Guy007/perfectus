@@ -1,5 +1,5 @@
 <template>
-    <div class="carousel slide" id="myCarousel" data-ride="carousel">
+    <div id="topBody" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0"></li>
       <li class="active" data-target="#myCarousel" data-slide-to="1"></li>
@@ -7,7 +7,9 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item">
-        <svg xmlns="http://www.w3.org/2000/svg" class="bd-placeholder-img" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" width="100%" height="100%"><rect fill="#777" width="100%" height="100%" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="bd-placeholder-img" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" width="100%" height="100%">
+        <image href="../assets/logo.png"/>
+        </svg>
         <div class="container">
           <div class="carousel-caption text-left">
             <h1>Example headline.</h1>
@@ -16,8 +18,8 @@
           </div>
         </div>
       </div>
-      <div class="carousel-item active">
-        <svg xmlns="http://www.w3.org/2000/svg" class="bd-placeholder-img" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" width="100%" height="100%"><rect fill="#777" width="100%" height="100%" /></svg>
+      <div id="item2" class="carousel-item active">
+        <svg xmlns="http://www.w3.org/2000/svg" class="bd-placeholder-img" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" width="100%" height="100%"></svg>
         <div class="container">
           <div class="carousel-caption">
             <h1>Another example headline.</h1>
@@ -51,6 +53,7 @@
 <script>
 import Vue from "vue";
 import "bootstrap/dist/css/bootstrap.css";
+import "../css/init.css"
 
 
 new Vue({
@@ -68,11 +71,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#middleBody {
-  background-color: #036278;
+#topBody {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* padding-top:56px; need to add padding by inheritance*/
+  display: flex;
 }
-.navbar-light .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.829);
+#item2{
+  background-image: url('../assets/test.png')
 }
+.wrapper > * {
+  flex: 1 100%;
+}
+
 </style>

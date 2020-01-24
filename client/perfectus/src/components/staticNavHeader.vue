@@ -1,7 +1,7 @@
 <template>
-  <div class="navHeader">
+
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <a class="navbar-brand" href="#">Carousel</a>
         <button
           class="navbar-toggler"
@@ -22,11 +22,11 @@
                 <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="#">Link</a>
             </li>
-            <li class="nav-item">
-              <a tabindex="-1" class="nav-link disabled" aria-disabled="true" href="#">Disabled</a>
+            <li class="nav-item active">
+              <a tabindex="-1" class="nav-link" href="#">Disabled</a>
             </li>
           </ul>
           <form class="form-inline mt-2 mt-md-0">
@@ -41,58 +41,6 @@
         </div>
       </nav>
     </header>
-    <!-- <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-      <a class="navbar-brand" href="#" style='font-size : 2.2rem;font-weight:550;'>{{ companyName }}</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">
-              Our Team
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Testimonials</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >Profile</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" tabindex="-1">RoI Calculator</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" tabindex="-1">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>-->
-  </div>
 </template>
 
 <script>
@@ -114,9 +62,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-nav {
+.navbar {
   background-color: #036278;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #CA8201;
 }
 .navbar-light .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.829);
